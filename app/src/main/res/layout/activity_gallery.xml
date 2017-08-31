@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.robotix_vssut.welcomeanimationapp.activity_gallery">
+    tools:context="com.vssut_robotics.application.activity_gallery">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,6 +19,8 @@
         android:id="@+id/toolbar2"
         app:title="Gallery"
         app:titleTextColor="@color/cardview_light_background" />
+
+
 
     <WebView
         android:layout_width="match_parent"

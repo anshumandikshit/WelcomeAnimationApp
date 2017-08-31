@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
 
 
-    tools:context="com.robotix_vssut.welcomeanimationapp.feedback"
-    android:background="@color/common_google_signin_btn_text_dark_disabled">
+    tools:context="com.vssut_robotics.application.feedback"
+    android:background="@color/cardview_light_background">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:background="@color/colorPrimaryDark"
         android:theme="?attr/actionBarTheme"
         android:minHeight="?attr/actionBarSize"
         android:layout_alignParentTop="true"
@@ -58,12 +58,11 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cover"
+        app:srcCompat="@drawable/logo7"
         android:id="@+id/imageView"
         android:layout_below="@+id/toolbar5"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="18dp" />
+        android:layout_marginTop="65dp" />
 
 
 </RelativeLayout>

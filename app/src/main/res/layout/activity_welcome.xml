@@ -9,15 +9,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.robotix_vssut.welcomeanimationapp.WelcomeActivity"
-    android:background="@android:color/background_dark">
+    tools:context="com.vssut_robotics.application.WelcomeActivity"
+    android:background="@color/cardview_light_background">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cover"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo"
         android:id="@+id/imageView2"
-        android:padding="25dp" />
+        android:padding="25dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -6,16 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.robotix_vssut.welcomeanimationapp.Activity_Achievement">
+    tools:context="com.vssut_robotics.application.activities.Activity_Achievement">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
 
-        android:id="@+id/toolbar1"
+        android:id="@+id/toolbar_achievent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
 
         app:title="Achievements"
-        app:titleTextColor="@color/cardview_light_background"></android.support.v7.widget.Toolbar>
+        app:titleTextColor="@color/cardview_light_background"
+        app:subtitleTextColor="@color/cardview_light_background"></android.support.v7.widget.Toolbar>
 
     <ExpandableListView
         android:id="@+id/expandableListView1"
@@ -25,7 +26,7 @@
         android:divider="@android:color/holo_red_dark"
         android:dividerHeight="5dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/toolbar1" />
+        android:layout_below="@+id/toolbar_achievent" />
 
 
 </RelativeLayout>

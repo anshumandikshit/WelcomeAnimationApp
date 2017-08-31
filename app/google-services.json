@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "513605348422",
-    "firebase_url": "https://welcomeanimationapp.firebaseio.com",
-    "project_id": "welcomeanimationapp",
-    "storage_bucket": "welcomeanimationapp.appspot.com"
+    "project_number": "102031164536",
+    "firebase_url": "https://vssut-robotics.firebaseio.com",
+    "project_id": "vssut-robotics",
+    "storage_bucket": "vssut-robotics.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:513605348422:android:8a2f511e034f8555",
+        "mobilesdk_app_id": "1:102031164536:android:14f787e4cd73c4a5",
         "android_client_info": {
-          "package_name": "com.robotix_vssut.welcomeanimationapp"
+          "package_name": "com.vssut_robotics.application"
         }
       },
       "oauth_client": [
         {
-          "client_id": "513605348422-qrcqllmf58ftbp681ioqcogfud34usnk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.robotix_vssut.welcomeanimationapp",
-            "certificate_hash": "B4CE656912A0D464F953660E1693A84F6F48733A"
-          }
-        },
-        {
-          "client_id": "513605348422-vpa2eavkbjshppvajvqnnvhp14hk4fha.apps.googleusercontent.com",
+          "client_id": "102031164536-537f8rinthrp0qff8fsck0tdb7flbohp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAbcICmUzYlPvGRvoFOp2T5L3uYUduCO5Q"
+          "current_key": "AIzaSyDdJ9Mzh6iTeh6jf7oUexrCsU1_OOVt4R4"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "513605348422-vpa2eavkbjshppvajvqnnvhp14hk4fha.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

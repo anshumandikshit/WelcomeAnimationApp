@@ -15,4 +15,7 @@
     <string name="title_activity__achivement">Activity_Achivement</string>
     <string name="year">Year</string>
     <string name="location">Location</string>
+
+    <string name="register"><u><b><i>Copyright</i></b></u></string>
+
 </resources>

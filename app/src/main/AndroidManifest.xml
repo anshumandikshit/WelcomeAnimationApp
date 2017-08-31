@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.robotix_vssut.welcomeanimationapp">
+    package="com.vssut_robotics.application">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- GCM connects to Google Services. -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- GCM requires a Google account. -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <permission android:name="com.example.sampleapp.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+
+    <permission
+        android:name="com.example.sampleapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
     <uses-permission android:name="com.example.sampleapp.permission.C2D_MESSAGE" />
     <!-- This app has permission to register and receive dataf message. -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     android:hardwareAccelerated="true"
     <application
+        android:name="com.vssut_robotics.application.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/app_icon"
+        android:icon="@mipmap/final_logo"
         android:label="VSSUT ROBOTICS"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".MyApplication">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name="com.vssut_robotics.application.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".WelcomeActivity"
+            android:name="com.vssut_robotics.application.WelcomeActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,46 +48,42 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name=".NewActivity" />
-        <activity android:name=".navigate">
+        <activity android:name="com.vssut_robotics.application.NewActivity" />
+        <activity android:name="com.vssut_robotics.application.navigate">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".PostActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SetupActivity">
+        <activity android:name="com.vssut_robotics.application.PostActivity" />
+        <activity android:name="com.vssut_robotics.application.RegisterActivity" />
+        <activity android:name="com.vssut_robotics.application.LoginActivity" />
+        <activity android:name="com.vssut_robotics.application.SetupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContentAbout" />
-        <activity android:name=".feedback" />
-        <activity android:name=".activity_gallery" />
-        <activity android:name=".Activity_Achievement" />
-
-
-
-        <activity android:name=".Notification_Activity">
+        <activity android:name="com.vssut_robotics.application.ContentAbout" />
+        <activity android:name="com.vssut_robotics.application.feedback" />
+        <activity android:name="com.vssut_robotics.application.activity_gallery" />
+        <activity android:name="com.vssut_robotics.application.activities.Activity_Achievement" />
+        <activity android:name="com.vssut_robotics.application.Notification_Activity">
             <intent-filter>
-
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.FoldableListActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
-            android:label="Projects" />
-
-        <activity android:name=".activities.MainActivity2"
-            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
-        </activity>
+            android:name="com.vssut_robotics.application.activities.FoldableListActivity"
+            android:label="Projects"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name="com.vssut_robotics.application.activities.MainActivity2"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name="com.vssut_robotics.application.ResetPasswordActivity" />
+        <activity android:name="com.vssut_robotics.application.content_me"></activity>
     </application>
 
 </manifest>

@@ -1,20 +1,24 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        VSSUT_Roborics {
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
     defaultConfig {
-        applicationId "com.robotix_vssut.welcomeanimationapp"
-        minSdkVersion 23
+        applicationId "com.vssut_robotics.application"
+        minSdkVersion 19
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "3.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        manifestPlaceholders = [manifestApplicationId         : "${applicationId}",
-                                pushbots_app_id               : "5863fbc24a9efa94358b4567",
-                                pushbots_loglevel             : "DEBUG",
-                                google_sender_id              : "943791177422"]
+        manifestPlaceholders = [manifestApplicationId: "${applicationId}",
+                                pushbots_app_id      : "5863fbc24a9efa94358b4567",
+                                pushbots_loglevel    : "DEBUG",
+                                google_sender_id     : "943791177422"]
     }
     buildTypes {
         release {
@@ -40,7 +44,7 @@ dependencies {
     compile 'com.firebaseui:firebase-ui-database:1.0.0'
     compile 'com.google.firebase:firebase-database:9.8.0'
     compile 'com.google.firebase:firebase-storage:9.8.0'
-    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.3.1'
     compile 'com.google.firebase:firebase-auth:9.8.0'
     compile 'com.google.android.gms:play-services-auth:9.8.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
@@ -51,11 +55,7 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.alexvasilkov:android-commons:1.2.4'
     compile 'com.pushbots:pushbots-lib:3.0.1@aar'
-
-
     testCompile 'junit:junit:4.12'
-
-
 }
 
 

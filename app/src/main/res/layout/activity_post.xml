@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.robotix_vssut.welcomeanimationapp.PostActivity">
+    tools:context="com.vssut_robotics.application.PostActivity">
 
     <ImageButton
         android:layout_width="wrap_content"
